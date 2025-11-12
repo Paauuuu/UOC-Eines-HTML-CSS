@@ -31,6 +31,7 @@ html {
 
 main{
   padding-bottom: 50px;
+  flex: 1;
 }
 
 header,
@@ -54,6 +55,8 @@ body {
   background-color: var(--background);
   margin: 0;
   color: var(--gris);
+  display: flex;
+  flex-direction: column;
 }
 
 nav ul li {
