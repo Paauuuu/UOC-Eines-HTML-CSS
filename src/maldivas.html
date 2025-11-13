@@ -23,7 +23,7 @@
         </ul>
     </nav>
 
-    <h2><bold>Viaja a Maldivas</bold></h2>
+    <h2>Viaja a Maldivas</h2>
     <p class="subtitulo">Al alcance de un clic</p>
 
     <main class="container">
@@ -38,7 +38,7 @@
         </figure>
 
         <p class="p-encuadrado">
-            Maldivas ha sido galardonada como <italic>mejor destino turístico del mundo</italic> en 2021, 2021, 2022 y 2023 por los prestigiosos <a href="https://www.worldtravelawards.com/">World Travel Adwards</a>. La oficina de turismo 
+            Maldivas ha sido galardonada como mejor destino turístico del mundo en 2021, 2021, 2022 y 2023 por los prestigiosos <a href="https://www.worldtravelawards.com/">World Travel Adwards</a>. La oficina de turismo 
             de Maldivas es <a href="https://visitmaldives.com/en">VisitMaldives</a> y registra información de todos los complejos turísticos del país, así como de los principales operadores y agencias de viaje oficiales 
             del país. Solo hay una agencia de viajes española reconocida oficialmente por la oficina de turismo de Maldivas, <a href="https://arenatours.com/">arenatours</a>, especializada en viajes a Maldivas desde el año 2006.
             El éxito del país con el turismo, junto a su modelo de gestión, se debe a la riqueza cromática de sus aguas y la abundancia de la vida subacuática, como lo demuestra el que sea uno de los primeros destinos para <a href="https://es.wikipedia.org/wiki/Buceo">buceadores</a> del mundo. 
@@ -106,6 +106,18 @@
                 <button class="boton-reservar">Reservar Viaje</button>
             </p>
         </form>
+
+        <script>
+            var boton = document.querySelector(".boton-reservar")
+            boton.addEventListener("click", function() {
+                if (boton.textContent !== "Reservar Viaje") {
+                    boton.textContent = "Reservar Viaje"
+                } else {
+                    boton.textContent = "Viaje Reservado"
+                }
+            });
+        </script>
+
     </main>
 
     <footer>

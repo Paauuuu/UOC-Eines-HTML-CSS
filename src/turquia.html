@@ -23,7 +23,7 @@
         </ul>
     </nav>
 
-    <h2><bold>Viaja a Turquía</bold></h2>
+    <h2>Viaja a Turquía</h2>
     <p class="subtitulo">Al alcance de un clic</p>
 
     <main class="container">
@@ -100,6 +100,18 @@
                 <button class="boton-reservar">Reservar Viaje</button>
             </p>
         </form>
+
+        <script>
+            var boton = document.querySelector(".boton-reservar")
+            boton.addEventListener("click", function() {
+                if (boton.textContent !== "Reservar Viaje") {
+                    boton.textContent = "Reservar Viaje"
+                } else {
+                    boton.textContent = "Viaje Reservado"
+                }
+            });
+        </script>
+
     </main>
 
     <footer>
