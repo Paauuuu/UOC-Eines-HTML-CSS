@@ -30,15 +30,13 @@
 
         <h3 class="current-page">El paraíso del Adriático</h3>
         <figure>
-            <img 
-                srcset="img/croacia/trogir_resized.webp 550w, img/croacia/trogir_resized_50.webp 275w"
-                sizes="(width <= 500px) 275px,
-                        550px"
-                src="img/croacia/trogir_resized.webp"
-                alt="Trogir"
-                >
-            <figcaption>
-            Vista de <a href="https://es.wikipedia.org/wiki/Trogir">Trogir</a> | <a href="https://es.wikipedia.org/wiki/Croacia#/media/Archivo:Trogir3.jpg">Rgrrbbt</a>,
+            <picture>
+                <source media="(width < 600px)" srcset="img/croacia/makarska_cropped.webp" />
+                <source media="(width >= 600px)" srcset="img/croacia/makarska_resized_explore.webp" />
+                <img src="img/croacia/makarska_resized_explore.webp" alt="Makarska">
+            </picture>
+            <figcaption class="small-figcaption-explore-img">
+                <a href="https://es.wikipedia.org/wiki/Makarska">Makarska</a>, <a href="https://es.wikipedia.org/wiki/Condado_de_Split-Dalmacia">condado de Split-Dalmacia.</a>| <a href="https://commons.wikimedia.org/wiki/File:Makarska_shore.jpg">Sole</a>,
             <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, vía Wikimedia Commons
             </figcaption>
         </figure>

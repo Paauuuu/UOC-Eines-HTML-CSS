@@ -30,15 +30,14 @@
 
         <h3 class="current-page">Entre Palmeras y Cócteles</h3>
         <figure>
-            <img 
-                srcset="img/maldivas/sunset_resized.webp 550w, img/maldivas/sunset_resized_50.webp 275w"
-                sizes="(width <= 500px) 275px,
-                        550px"
-                src="img/maldivas/sunset_resized.webp"
-                alt="Puesta de sol en Maldivas"
-                >
-            <figcaption>
-            Puesta de sol en Maldivas | <a href="https://commons.wikimedia.org/wiki/File:Sunset_in_the_Maldives.jpg">Ibrahim Iujaz</a>,
+            <picture>
+                <source media="(width < 600px)" srcset="img/maldivas/hamaca_cropped.webp" />
+                <source media="(width >= 600px)" srcset="img/maldivas/hamaca_resized_explore.webp" />
+                <img src="img/maldivas/hamaca_resized_explore.webp" alt="Exterior de la Mezquita Azul">
+            </picture>
+            
+            <figcaption class="small-figcaption-explore-img">
+            Thudufushi, Atolón de Ari, Maldivas| <a href="https://es.wikipedia.org/wiki/Maldivas#/media/Archivo:Diamonds_Thudufushi_Beach_and_Water_Villas,_May_2017_-07.jpg">Martin Falbisoner</a>,
             <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, vía Wikimedia Commons
             </figcaption>
         </figure>

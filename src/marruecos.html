@@ -30,16 +30,14 @@
 
         <h3 class="current-page">El desierto en estado puro</h3>
         <figure>
-             <img 
-                srcset="img/marruecos/merzouga_resized.webp 550w, img/marruecos/merzouga_resized_50.webp 275w"
-                sizes="(width <= 500px) 275px,
-                        550px"
-                src="img/marruecos/merzouga_resized.webp"
-                alt="Clima desértico en Merzouga"
-                >
-            <figcaption>
-            Clima desértico en <a href="https://es.wikipedia.org/wiki/Merzouga">Merzouga</a> | <a href="https://commons.wikimedia.org/wiki/File:Caravane_de_chameaux_au_milieu_des_dunes_de_Merzouga.jpg">Houssain tork</a>,
-            <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, vía Wikimedia Commons
+            <picture>
+                <source media="(width < 600px)" srcset="img/marruecos/leon_cropped.webp" />
+                <source media="(width >= 600px)" srcset="img/marruecos/leon_resized_explore.webp" />
+                <img src="img/marruecos/leon_resized_explore.webp"  alt="Exterior de la Mezquita Azul">
+            </picture>
+            <figcaption class="small-figcaption-explore-img">
+                <a href="https://es.wikipedia.org/wiki/Panthera_leo_leo">León del Atlas</a>| <a href="https://es.wikipedia.org/wiki/Maldivas#/media/Archivo:Diamonds_Thudufushi_Beach_and_Water_Villas,_May_2017_-07.jpg">Irbis75</a>,
+                <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, vía Wikimedia Commons
             </figcaption>
         </figure>
 

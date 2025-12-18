@@ -30,15 +30,14 @@
 
         <h3 class="current-page">La perla del mediterráneo</h3>
         <figure>
-            <img 
-                srcset="img/turquia/minaretes_resized.webp 550w, img/turquia/minaretes_resized_50.webp 275w"
-                sizes="(width <= 500px) 275px,
-                        550px"
-                src="img/turquia/minaretes_resized.webp"
-                alt="Madrasa de los Minaretes Gemelos"
-                >
-            <figcaption>
-            Madrasa de los Minaretes Gemelos, un ejemplo de la arquitectura del <a href="https://commons.wikimedia.org/wiki/File:Erzurum_Cifte_Minareli_Sunrise.JPG">Imperio Selyúcida</a> | <a href="https://commons.wikimedia.org/wiki/File:Sultan_Ahmed_camii_Istanbul_2013_2.jpg">Bjørn Christian Tørrissen</a>,
+            <picture>
+                <source media="(width < 600px)" srcset="img/turquia/mezquita-azul_cropped.webp" />
+                <source media="(width >= 600px)" srcset="img/turquia/mezquita-azul_resized_explore.webp" />
+                <img src="img/turquia/mezquita-azul_resized_explore.webp" alt="Exterior de la Mezquita Azul">
+            </picture>
+
+            <figcaption class="small-figcaption-explore-img">
+            Exterior de la <a href="https://es.wikipedia.org/wiki/Mezquita_Azul">Mezquita Azul</a> | <a href="https://commons.wikimedia.org/wiki/File:Sultan_Ahmed_camii_Istanbul_2013_2.jpg">Karelj</a>,
             <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, vía Wikimedia Commons
             </figcaption>
         </figure>
