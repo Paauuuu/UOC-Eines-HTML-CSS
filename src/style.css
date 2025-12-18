@@ -148,7 +148,7 @@ figcaption {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-image:url(img/index-bg.jpg);
+  background-image:url(img/index-bg.svg);
   background-size: cover;
 }
 
@@ -304,4 +304,14 @@ footer {
   left: -120px;
   width: 40px;
   animation: fly-plane 14s ease infinite;
+}
+
+.portrait-img {
+  display: block;
+  position:absolute;
+  background-repeat: repeat-x;
+  right: 24%;
+  width: 150px;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 }
