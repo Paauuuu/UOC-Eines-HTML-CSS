@@ -33,7 +33,7 @@
             <picture>
                 <source media="(width < 600px)" srcset="img/marruecos/leon_cropped.webp" />
                 <source media="(width >= 600px)" srcset="img/marruecos/leon_resized_explore.webp" />
-                <img src="img/marruecos/leon_resized_explore.webp"  alt="Exterior de la Mezquita Azul">
+                <img src="img/marruecos/leon_resized_explore.webp" loading="lazy" alt="Exterior de la Mezquita Azul">
             </picture>
             <figcaption class="small-figcaption-explore-img">
                 <a href="https://es.wikipedia.org/wiki/Panthera_leo_leo">León del Atlas</a>| <a href="https://es.wikipedia.org/wiki/Maldivas#/media/Archivo:Diamonds_Thudufushi_Beach_and_Water_Villas,_May_2017_-07.jpg">Irbis75</a>,
@@ -57,6 +57,7 @@
             <figure class="small-img">
                 <img 
                     srcset="img/marruecos/aeropuerto_resized.webp 300w, img/marruecos/aeropuerto_resized_50.webp 150w"
+                    loading="lazy"
                     sizes="(width <= 500px) 150px,
                             300px"
                     src="img/marruecos/aeropuerto_resized.webp"
@@ -71,6 +72,7 @@
             <figure class="small-img">
                 <img 
                     srcset="img/marruecos/marrakech_resized.webp 300w, img/marruecos/marrakech_resized_50.webp 150w"
+                    loading="lazy"
                     sizes="(width <= 500px) 150px,
                             300px"
                     src="img/marruecos//marrakech_resized.webp"
@@ -115,6 +117,7 @@
         <figure class="small-img">
             <img 
                 srcset="img/marruecos/tajin_resized.webp 300w, img/marruecos/tajin_resized_50.webp 150w"
+                loading="lazy"
                 sizes="(width <= 500px) 150px,
                         300px"
                 src="img/marruecos/tajin_resized.webp"
@@ -131,7 +134,7 @@
             </p>
         </form>
 
-        <script>
+        <script async>
             var boton = document.querySelector(".boton-reservar")
             boton.addEventListener("click", function() {
                 if (boton.textContent !== "Reservar Viaje") {

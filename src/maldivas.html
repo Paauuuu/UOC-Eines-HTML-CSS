@@ -33,7 +33,7 @@
             <picture>
                 <source media="(width < 600px)" srcset="img/maldivas/hamaca_cropped.webp" />
                 <source media="(width >= 600px)" srcset="img/maldivas/hamaca_resized_explore.webp" />
-                <img src="img/maldivas/hamaca_resized_explore.webp" alt="Exterior de la Mezquita Azul">
+                <img src="img/maldivas/hamaca_resized_explore.webp" loading="lazy" alt="Exterior de la Mezquita Azul">
             </picture>
             
             <figcaption class="small-figcaption-explore-img">
@@ -56,6 +56,7 @@
             <figure class="small-img">
                 <img 
                     srcset="img/maldivas/kaafu_resized.webp 300w, img/maldivas/kaafu_resized_50.webp 150w"
+                    loading="lazy"
                     sizes="(width <= 500px) 150px,
                             300px"
                     src="img/maldivas/kaafu_resized.webp"
@@ -70,6 +71,7 @@
             <figure class="small-img">
                 <img 
                     srcset="img/maldivas/pesca_resized.webp 300w, img/maldivas/pesca_resized_50.webp 150w"
+                    loading="lazy"
                     sizes="(width <= 500px) 150px,
                             300px"
                     src="img/maldivas/pesca_resized.webp"
@@ -116,6 +118,7 @@
         <figure class="small-img">
              <img 
                 srcset="img/maldivas/resort_resized.webp 300w, img/maldivas/resort_resized_50.webp 150w"
+                loading="lazy"
                 sizes="(width <= 500px) 150px,
                         300px"
                 src="img/maldivas/resort_resized.webp"
@@ -132,7 +135,7 @@
             </p>
         </form>
 
-        <script>
+        <script async>
             var boton = document.querySelector(".boton-reservar")
             boton.addEventListener("click", function() {
                 if (boton.textContent !== "Reservar Viaje") {

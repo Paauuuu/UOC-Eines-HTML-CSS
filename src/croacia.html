@@ -33,7 +33,7 @@
             <picture>
                 <source media="(width < 600px)" srcset="img/croacia/makarska_cropped.webp" />
                 <source media="(width >= 600px)" srcset="img/croacia/makarska_resized_explore.webp" />
-                <img src="img/croacia/makarska_resized_explore.webp" alt="Makarska">
+                <img src="img/croacia/makarska_resized_explore.webp" loading="lazy" alt="Makarska">
             </picture>
             <figcaption class="small-figcaption-explore-img">
                 <a href="https://es.wikipedia.org/wiki/Makarska">Makarska</a>, <a href="https://es.wikipedia.org/wiki/Condado_de_Split-Dalmacia">condado de Split-Dalmacia.</a>| <a href="https://commons.wikimedia.org/wiki/File:Makarska_shore.jpg">Sole</a>,
@@ -60,6 +60,7 @@
             <figure class="small-img">
                 <img 
                     srcset="img/croacia/vidora_resized.webp 300w, img/croacia/vidora_resized_50.webp 150w"
+                    loading="lazy"
                     sizes="(width <= 500px) 150px,
                             300px"
                     src="img/croacia/vidora_resized.webp"
@@ -74,6 +75,7 @@
             <figure class="small-img">
                 <img 
                     srcset="img/croacia/trakošćan_resized.webp 300w, img/croacia/trakošćan_resized_50.webp 150w"
+                    loading="lazy"
                     sizes="(width <= 500px) 150px,
                             300px"
                     src="img/croacia/trakošćan_resized.webp"
@@ -122,6 +124,7 @@
         <figure class="small-img">
             <img 
                 srcset="img/croacia/vino_resized.webp 300w, img/croacia/vino_resized_50.webp 150w"
+                loading="lazy"
                 sizes="(width <= 500px) 150px,
                         300px"
                 src="img/croacia/vino_resized.webp"
@@ -138,7 +141,7 @@
             </p>
         </form>
 
-        <script>
+        <script async>
             var boton = document.querySelector(".boton-reservar")
             boton.addEventListener("click", function() {
                 if (boton.textContent !== "Reservar Viaje") {
