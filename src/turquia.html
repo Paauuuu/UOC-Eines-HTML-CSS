@@ -34,7 +34,7 @@
                 <source media="(width < 600px)" srcset="img/turquia/mezquita-azul_cropped.webp" />
                 <source media="(width >= 600px)" srcset="img/turquia/mezquita-azul_resized_explore.webp" />
                 <img src="img/turquia/mezquita-azul_resized_explore.webp" 
-                loading="lazy"
+                fetchpriority="high"
                 width="600"
                 height="400"
                 alt="Exterior de la Mezquita Azul">
@@ -61,6 +61,7 @@
                     loading="lazy"
                     sizes="(width <= 500px) 150px,
                             300px"
+                    fetchpriority="high"
                     width="300"
                     height="200"
                     src="img/turquia/santa-sofia_resized.webp"
