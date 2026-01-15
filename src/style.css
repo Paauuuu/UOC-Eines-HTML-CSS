@@ -39,8 +39,9 @@
   --background: rgb(232, 215, 215);
   --blanco: rgb(247, 247, 247);
   --gris: rgb(10, 10, 10);
-  --h2: rgb(199, 126, 190);
+  --h2: #0000E0;
   --azul: rgb(76, 97, 212);
+  --links-color : #0000E0;
 }
 
 html {
@@ -123,6 +124,10 @@ a {
   color: var(--gris);
 }
 
+figcaption a {
+  color: var(--links-color);
+}
+
 header p a:hover, nav a:hover {
   color: var(--h2);
 }
@@ -136,7 +141,7 @@ figcaption {
 }
 
 .p-encuadrado a, figcaption a {
-  color: var(--azul);
+  color: var(--links-color);
 }
 
 .portrait-content a:hover {
