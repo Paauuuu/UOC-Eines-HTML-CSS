@@ -122,11 +122,12 @@ figure a:hover, h3 a:hover, .p-encuadrado a:hover {
 a {
   text-decoration: none;
   color: var(--gris);
+  font-style: italic;
 }
 
 figcaption a {
   color: var(--links-color);
-  font-style: italic;
+  
 }
 
 header p a:hover, nav a:hover {
