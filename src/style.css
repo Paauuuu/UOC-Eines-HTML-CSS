@@ -126,6 +126,7 @@ a {
 
 figcaption a {
   color: var(--links-color);
+  font-style: italic;
 }
 
 header p a:hover, nav a:hover {
